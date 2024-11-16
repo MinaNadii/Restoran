@@ -389,7 +389,9 @@ footer {
     ul {
       border-bottom: 1px solid rgba(194, 194, 194, 0.753);
       display: flex;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
+      justify-content: center;
+
       margin-bottom: 3rem;
       .active {
         border-bottom: 0.125rem solid var(--primary-color);
