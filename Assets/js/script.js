@@ -9,22 +9,3 @@ window.addEventListener("scroll", () => {
     arrowUp.classList.add("d-none");
   }
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-  const body = document.body;
-  const targetDivs = document.querySelectorAll(".target-div");
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        body.classList.add("animate__animated", "animate__bounce");
-
-        setTimeout(() => {
-          body.classList.remove("animate__animated", "animate__bounce");
-        }, 1000); // Duration of the animation
-      }
-    });
-  });
-
-  targetDivs.forEach((div) => observer.observe(div));
-});
